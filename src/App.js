@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState, useEffect} from "react";
 import "./App.css";
+import axios from 'axios'
+
+import { BASE_URL, API_KEY} from './index.js'
 
 function App() {
   return (

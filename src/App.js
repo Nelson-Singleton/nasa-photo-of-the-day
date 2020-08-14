@@ -3,9 +3,19 @@ import "./App.css";
 import axios from 'axios';
 import Header from './header.js';
 import Container from './maincontainer.js';
+import styled from 'styled-components'
 
 import { BASE_URL, API_KEY} from './index.js'
 
+
+const StyledDiv = styled.div``;
+const StyledP = styled.p`
+width: 50%`;
+const StyledH1 = styled.h1`
+`
+
+const StyledH2 = styled.h2``;
+const StyledH3 = styled.h3``;
 
 function App() {
 
@@ -31,10 +41,7 @@ axios.get(`${BASE_URL}?api_key=${API_KEY}&date=2020-08-12`)
     <div className="App">
       <Header nasaData = {nasaData} />
       <Container nasaData = {nasaData} />
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      
     </div>
   );
 }
